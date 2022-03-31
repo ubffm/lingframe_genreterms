@@ -9,7 +9,8 @@
 
 lfgt: a skos:ConceptScheme ;
       dct:title "Lingframe Genre Terms" ;
-      dct:description "A selection of concepts to be used in conjunction with the Lingframe application profile for BIBFRAME"@en .
+      dct:description "A selection of concepts to be used in conjunction with the Lingframe application profile for BIBFRAME"@en ;
+      dct:license <https://creativecommons.org/licenses/by/4.0/> .
 
 lfgt:book a skos:Concept ;
       skos:prefLabel "Buch"@de ;
