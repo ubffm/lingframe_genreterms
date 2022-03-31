@@ -1,0 +1,78 @@
+@prefix lfgt:  <https://data.linguistik.de/lingframe-genreform#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix marcgt: <http://id.loc.gov/vocabulary/marcgt/> .
+@prefix bllt:   <http://data.linguistik.de/bll/bll-thesaurus#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix ms:     <http://w3id.org/meta-share/meta-share/> .
+@prefix gnd:    <https://d-nb.info/gnd/> .
+
+lfgt: a skos:ConceptScheme ;
+      dct:title "Lingframe Genre Terms" ;
+      dct:description "A selection of concepts to be used in conjunction with the Lingframe application profile for BIBFRAME"@en .
+
+lfgt:book a skos:Concept ;
+      skos:prefLabel "Buch"@de ;
+      skos:prefLabel "Book"@en ;
+      skos:closeMatch marcgt:boo ;
+      skos:closeMatch ms:book ;
+      skos:narrowMatch ms:booklet ;
+      skos:narrowMatch ms:manual ;
+      skos:narrowMatch ms:mastersThesis;
+      skos:narrowMatch ms:phdThesis ;
+      # GND: Konferenzschrift
+      skos:narrowMatch gnd:1071861417 ;
+      # GND: Hochschulschrift
+      skos:narrowMatch gnd:4113937-9 ;
+      # GND: Festschrift
+      skos:narrowMatch gnd:4016928-5 ;
+      # GND: Buch
+      skos:relatedMatch gnd:4008570-3 .
+
+lfgt:article a skos:Concept ;
+      skos:prefLabel "Aufsatz"@de ;
+      skos:prefLabel "Article"@en ;
+      skos:closeMatch marcgt:art ;
+      skos:closeMatch ms:article1 ;
+      skos:narrowMatch ms:inCollection ;
+      skos:narrowMatch ms:inProceedings ;
+      skos:narrowMatch ms:technicalReport .
+
+lfgt:other a skos:Concept ;
+      skos:prefLabel "Sonstiges"@de ;
+      skos:prefLabel "Other"@en .
+
+lfgt:journal a skos:Concept ;
+      skos:prefLabel "Zeitschrift"@de ;
+      skos:prefLabel "Journal"@en ;
+      skos:closeMatch marcgt:joo ;
+      skos:closeMatch gnd:4067488-5 .
+
+lfgt:series a skos:Concept ;
+      skos:prefLabel "Serie"@de ;
+      skos:prefLabel "Series"@en ;
+      skos:closeMatch marcgt:ser ;
+      # GND: Monografische Reihe
+      skos:narrowMatch gnd:4179998-7 .
+
+lfgt:website a skos:Concept ;
+      skos:prefLabel "Website"@de ;
+      skos:prefLabel "Web site"@en ;
+      skos:closeMatch marcgt:web ;
+      # GND: Website
+      skos:closeMatch gnd:4596172-4 .
+
+lfgt:corpus a skos:Concept ;
+      skos:prefLabel "Korpus"@de ;
+      skos:prefLabel "Corpus"@en ;
+      # BLL: Korpuslinguistik
+      skos:relatedMatch [ a bllt:bll-133125548 ] ;
+      # GND: Korpus <Linguistik>
+      skos:relatedMatch gnd:4165338-5 . 
+
+lfgt:dictionary a skos:Concept ;
+      skos:prefLabel "Wörterbuch"@de ;
+      skos:prefLabel "dictionary" ;
+      skos:closeMatch marcgt:dictionary ;
+      # GND: Wörterbuch
+      skos:closeMatch gnd:4066724-8 .
