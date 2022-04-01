@@ -1,4 +1,4 @@
-@prefix lfgt:  <https://data.linguistik.de/lingframe-genreterms#> .
+@prefix lfgt:   <http://data.linguistik.de/lingframe-genreterms#> .
 @prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
 @prefix marcgt: <http://id.loc.gov/vocabulary/marcgt/> .
