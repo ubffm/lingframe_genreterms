@@ -73,7 +73,8 @@ lfgt:corpus a skos:Concept ;
 
 lfgt:dictionary a skos:Concept ;
       skos:prefLabel "Wörterbuch"@de ;
-      skos:prefLabel "dictionary" ;
+      skos:prefLabel "Dictionary"@en ;
       skos:closeMatch marcgt:dictionary ;
       # GND: Wörterbuch
       skos:closeMatch gnd:4066724-8 .
+
