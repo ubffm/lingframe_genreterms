@@ -78,3 +78,12 @@ lfgt:dictionary a skos:Concept ;
       # GND: Wörterbuch
       skos:closeMatch gnd:4066724-8 .
 
+lfgt:database a skos:Concept ;
+     skos:prefLabel "Datenbank"@de ;
+     skos:prefLabel "Database"@en ;
+     skos:closeMatch marcgt:database ;
+     # BLL: Datenbank
+     skos:closeMatch bllt:bll-133087883 ;
+     # GND: Datenbank
+     skos:closeMatch gnd:4011119-2 .
+
